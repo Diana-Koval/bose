@@ -13,18 +13,19 @@
   @media  screen and (min-width:768px) {
     padding-right: 0;
     display: flex;
+    gap: 60px;
     align-items: center;
     justify-content: space-between;
   }
   @media  screen and (min-width:1440px) {
     padding-left: 80px;
-    padding-right: 80px;
+    // padding-right: 80px;
   }
 }
 .hero__left-side {
   max-width: 294px;
   @media  screen and (min-width:1440px) {
-    width: 45%;
+    width: 50%;
   }
 }
 .hero__text {
@@ -37,12 +38,16 @@
 }
 .hero__text:first-child {
   margin-bottom: 16px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 36px;
+  }
 }
 .hero__wrapper-title {
   @media  screen and (min-width:1440px) {
     position: relative;
     left: 110px;
-    width: 850px;
+    min-width: 760px;
+    // width: 850px;
   }
 }
 .hero__title {
@@ -88,5 +93,10 @@
   }
 }
 .hero__img {
-  max-width: 700px;
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 700px;
+  }
 }
